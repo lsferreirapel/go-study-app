@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
-import { SafeAreaView, StatusBar, Text } from "react-native";
+import { StatusBar } from "react-native";
 import SplashScreen from "react-native-lottie-splash-screen";
-import { Button, ThemeProvider } from "react-native-magnus";
+import { ThemeProvider } from "react-native-magnus";
+import { NavigationContainer } from "@react-navigation/native";
 
 import { theme } from "./common/theme";
+
+import { AppNavigator } from "@navigators/AppNavigator";
 
 const App = () => {
   useEffect(() => {
@@ -17,10 +20,9 @@ const App = () => {
         barStyle="dark-content"
         backgroundColor="transparent"
       />
-      <SafeAreaView>
-        <Text>TELA INCIAL</Text>
-        <Button>Teste</Button>
-      </SafeAreaView>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
     </ThemeProvider>
   );
 };
