@@ -1,16 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React, { useEffect } from "react";
+import { SafeAreaView, StatusBar, Text } from "react-native";
+import SplashScreen from "react-native-lottie-splash-screen";
+import { Button, ThemeProvider } from "react-native-magnus";
 
-import React, {useEffect} from 'react';
-import {SafeAreaView, Text} from 'react-native';
-import SplashScreen from 'react-native-lottie-splash-screen';
+import { theme } from "./common/theme";
 
 const App = () => {
   useEffect(() => {
@@ -18,9 +11,17 @@ const App = () => {
   }, []);
 
   return (
-    <SafeAreaView>
-      <Text>TELA INCIAL</Text>
-    </SafeAreaView>
+    <ThemeProvider theme={theme}>
+      <StatusBar
+        translucent
+        barStyle="dark-content"
+        backgroundColor="transparent"
+      />
+      <SafeAreaView>
+        <Text>TELA INCIAL</Text>
+        <Button>Teste</Button>
+      </SafeAreaView>
+    </ThemeProvider>
   );
 };
 export default App;
