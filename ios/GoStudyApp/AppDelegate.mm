@@ -3,6 +3,9 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "RNSplashScreen.h" // here
+
+#import "GoStudyApp-Swift.h" // here, change project name to yours
 
 #import <React/RCTAppSetupUtils.h>
 
@@ -57,6 +60,25 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  Dynamic *t = [Dynamic new];
+  UIView *animationUIView = (UIView *)[t createAnimationViewWithRootView:rootView lottieName:@"splashscreen"]; // change lottieName to your lottie files name
+  animationUIView.backgroundColor = [UIColor whiteColor]; // change backgroundColor
+
+  // register LottieSplashScreen to RNSplashScreen
+  [RNSplashScreen showLottieSplash:animationUIView inRootView:rootView];
+
+  // casting UIView type to AnimationView type
+  AnimationView *animationView = (AnimationView *) animationUIView;
+
+  // play
+  [t playWithAnimationView:animationView];
+
+  // If you want the animation layout to be forced to remove when hide is called, use this code
+  // [RNSplashScreen setAnimationFinished:true];
+
+  /* here */
+
   return YES;
 }
 
