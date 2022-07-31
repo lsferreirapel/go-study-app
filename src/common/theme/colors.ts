@@ -12,6 +12,9 @@ export const colors: ThemeType["colors"] = {
   get secondary() {
     return this.green500;
   },
+  get error() {
+    return this.red500;
+  },
 
   get gray1() {
     return this.gray800;

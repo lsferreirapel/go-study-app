@@ -4,6 +4,7 @@ export enum AuthRoutes {
   NAVIGATOR = "AuthNavigator",
 
   INTRO = "IntroScreen",
+  LOGIN = "LoginScreen",
 }
 
 export enum PrivateRoutes {
@@ -23,6 +24,7 @@ export type RootStackParamList = {
   /** ----- Auth routes ----- **/
   AuthNavigator: undefined;
   IntroScreen: undefined;
+  LoginScreen: undefined;
 
   /** ----- Private routes ----- **/
   PrivateNavigator: undefined;
