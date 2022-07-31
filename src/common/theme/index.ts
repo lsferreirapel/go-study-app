@@ -2,11 +2,13 @@ import { ThemeType } from "react-native-magnus";
 
 import { colors } from "./colors";
 import { Button } from "./components/Button";
+import { Text } from "./components/Text";
 
 export const theme: ThemeType = {
   colors,
   components: {
     Button,
+    Text,
   },
   fontSize: {
     xs: 14,
