@@ -5,7 +5,9 @@ module.exports = {
       "module-resolver",
       {
         alias: {
+          "@root": ".",
           "@src": "./src",
+          "@test": "./test",
           "@common": "./src/common",
           "@assets": "./src/common/assets",
           "@navigators": "./src/navigators",

@@ -22,8 +22,14 @@
       "@generated": [
           "./src/generated/*"
       ],
+      "@test/*": [
+        "./test/*"
+      ],
       "@src/*": [
         "./src/*"
+      ],
+      "@root/*": [
+        "./*"
       ]
     }
   }
