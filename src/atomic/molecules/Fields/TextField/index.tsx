@@ -44,7 +44,11 @@ export function TextField({
         invalid={!!error?.message}
         {...props}
       />
-      {!!error?.message && <Text variant="error">{error.message}</Text>}
+      {!!error?.message && (
+        <Text variant="error" testID="error-message">
+          {error.message}
+        </Text>
+      )}
     </Div>
   );
 }

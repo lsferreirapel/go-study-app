@@ -26,18 +26,26 @@ export function LoginScreen() {
   return (
     <Div pt={top} pb={bottom} pl={left + 25} pr={right + 25}>
       <FormProvider {...form}>
-        <TextField name="cpf" label="CPF" placeholder="Seu CPF" required />
+        <TextField
+          name="cpf"
+          label="CPF"
+          placeholder="Seu CPF"
+          required
+          testID="indentifier-field"
+        />
         <TextField
           name="password"
           type="password"
           label="Senha"
           placeholder="Sua senha"
           required
+          testID="password-field"
         />
         <Button
           onPress={form.handleSubmit(onSubmit)}
           disabled={validating}
-          loading={isSubmitting}>
+          loading={isSubmitting}
+          testID="submit-button">
           Entrar
         </Button>
       </FormProvider>
