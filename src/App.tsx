@@ -4,8 +4,7 @@ import SplashScreen from "react-native-lottie-splash-screen";
 import { ThemeProvider } from "react-native-magnus";
 import { NavigationContainer } from "@react-navigation/native";
 
-import { theme } from "./common/theme";
-
+import { theme } from "@common/theme";
 import { AppNavigator } from "@navigators/AppNavigator";
 
 const App = () => {
