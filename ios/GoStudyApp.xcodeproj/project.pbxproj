@@ -14,6 +14,17 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-GoStudyApp-GoStudyAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GoStudyApp-GoStudyAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F92CBE7B288E1A70005A7F33 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92CBE7A288E1A70005A7F33 /* Dynamic.swift */; };
+		F997CBFA288E2A22001C9476 /* splashscreen.json in Resources */ = {isa = PBXBuildFile; fileRef = F997CBF9288E2A22001C9476 /* splashscreen.json */; };
+		1FAFF2481FA845F192319FE7 /* Poppins-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2466F658E26440B8AF87F4A4 /* Poppins-Black.otf */; };
+		20D175335A3F49B182C5D6D2 /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDE109F2532144E8925562C2 /* Poppins-Bold.otf */; };
+		27F6FE7C8C0A4DC39D43BE58 /* Poppins-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FEB9CC80A46F4C30B86A22DC /* Poppins-ExtraBold.otf */; };
+		89D771F0D3C74DCAA7DD3B43 /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32B7EBB810AC4BBABCEFF399 /* Poppins-ExtraLight.otf */; };
+		6503C322241B4E6CADCD1C4A /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBFBA4139D564870A544865C /* Poppins-Light.otf */; };
+		C39C42D9588B4937AF695062 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85BDA13A49BC4C8F917A3219 /* Poppins-Medium.otf */; };
+		64F33196BF8240649390A4B1 /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA1F01D8D46A46A39B70974B /* Poppins-Regular.otf */; };
+		06F2D744EBA746E7897F5EE6 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43DABD7C745649C598F586B4 /* Poppins-SemiBold.otf */; };
+		736E2D84B125405BAD92B012 /* Poppins-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 222FBF7C255F4542A1C4A227 /* Poppins-Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,18 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GoStudyApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-GoStudyApp-GoStudyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoStudyApp-GoStudyAppTests.release.xcconfig"; path = "Target Support Files/Pods-GoStudyApp-GoStudyAppTests/Pods-GoStudyApp-GoStudyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F92CBE79288E1A6F005A7F33 /* GoStudyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoStudyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F92CBE7A288E1A70005A7F33 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		F997CBF9288E2A22001C9476 /* splashscreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = splashscreen.json; path = ../android/app/src/main/res/raw/splashscreen.json; sourceTree = "<group>"; };
+		2466F658E26440B8AF87F4A4 /* Poppins-Black.otf */ = {isa = PBXFileReference; name = "Poppins-Black.otf"; path = "../src/common/assets/fonts/Poppins-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EDE109F2532144E8925562C2 /* Poppins-Bold.otf */ = {isa = PBXFileReference; name = "Poppins-Bold.otf"; path = "../src/common/assets/fonts/Poppins-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FEB9CC80A46F4C30B86A22DC /* Poppins-ExtraBold.otf */ = {isa = PBXFileReference; name = "Poppins-ExtraBold.otf"; path = "../src/common/assets/fonts/Poppins-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		32B7EBB810AC4BBABCEFF399 /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.otf"; path = "../src/common/assets/fonts/Poppins-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CBFBA4139D564870A544865C /* Poppins-Light.otf */ = {isa = PBXFileReference; name = "Poppins-Light.otf"; path = "../src/common/assets/fonts/Poppins-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85BDA13A49BC4C8F917A3219 /* Poppins-Medium.otf */ = {isa = PBXFileReference; name = "Poppins-Medium.otf"; path = "../src/common/assets/fonts/Poppins-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA1F01D8D46A46A39B70974B /* Poppins-Regular.otf */ = {isa = PBXFileReference; name = "Poppins-Regular.otf"; path = "../src/common/assets/fonts/Poppins-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43DABD7C745649C598F586B4 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.otf"; path = "../src/common/assets/fonts/Poppins-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		222FBF7C255F4542A1C4A227 /* Poppins-Thin.otf */ = {isa = PBXFileReference; name = "Poppins-Thin.otf"; path = "../src/common/assets/fonts/Poppins-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +115,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F92CBE7A288E1A70005A7F33 /* Dynamic.swift */,
+				F92CBE79288E1A6F005A7F33 /* GoStudyApp-Bridging-Header.h */,
 			);
 			name = GoStudyApp;
 			sourceTree = "<group>";
@@ -116,12 +141,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F997CBF9288E2A22001C9476 /* splashscreen.json */,
 				13B07FAE1A68108700A75B9A /* GoStudyApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* GoStudyAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C54A47D8FA7B4C3EB6389F1A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +174,23 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		C54A47D8FA7B4C3EB6389F1A /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2466F658E26440B8AF87F4A4 /* Poppins-Black.otf */,
+				EDE109F2532144E8925562C2 /* Poppins-Bold.otf */,
+				FEB9CC80A46F4C30B86A22DC /* Poppins-ExtraBold.otf */,
+				32B7EBB810AC4BBABCEFF399 /* Poppins-ExtraLight.otf */,
+				CBFBA4139D564870A544865C /* Poppins-Light.otf */,
+				85BDA13A49BC4C8F917A3219 /* Poppins-Medium.otf */,
+				EA1F01D8D46A46A39B70974B /* Poppins-Regular.otf */,
+				43DABD7C745649C598F586B4 /* Poppins-SemiBold.otf */,
+				222FBF7C255F4542A1C4A227 /* Poppins-Thin.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -207,7 +251,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -242,8 +286,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F997CBFA288E2A22001C9476 /* splashscreen.json in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1FAFF2481FA845F192319FE7 /* Poppins-Black.otf in Resources */,
+				20D175335A3F49B182C5D6D2 /* Poppins-Bold.otf in Resources */,
+				27F6FE7C8C0A4DC39D43BE58 /* Poppins-ExtraBold.otf in Resources */,
+				89D771F0D3C74DCAA7DD3B43 /* Poppins-ExtraLight.otf in Resources */,
+				6503C322241B4E6CADCD1C4A /* Poppins-Light.otf in Resources */,
+				C39C42D9588B4937AF695062 /* Poppins-Medium.otf in Resources */,
+				64F33196BF8240649390A4B1 /* Poppins-Regular.otf in Resources */,
+				06F2D744EBA746E7897F5EE6 /* Poppins-SemiBold.otf in Resources */,
+				736E2D84B125405BAD92B012 /* Poppins-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92CBE7B288E1A70005A7F33 /* Dynamic.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -432,7 +487,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-GoStudyApp-GoStudyAppTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -459,8 +516,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-GoStudyApp-GoStudyAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = GoStudyAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GoStudyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,6 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GoStudyApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoStudyApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,6 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = GoStudyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +586,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GoStudyApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoStudyApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -560,6 +623,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -596,6 +660,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -631,6 +696,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -659,6 +725,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

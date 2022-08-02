@@ -1,0 +1,36 @@
+{
+	"React Component With Folder Name": {
+		"prefix": "rffc",
+		"body": [
+		  "import React from \"react\";",
+		  "import { Div, Text } from \"react-native-magnus\";",
+		  "",
+		  "export function ${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}() {",
+		  "  return (",
+		  "    <Div>",
+		  "      <Text>${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}</Text>",
+		  "    </Div>",
+		  "  );",
+		  "}",
+		  ""
+		],
+		"description": ""
+	  },
+	  "React Component With File Name": {
+		"prefix": "rfc",
+		"body": [
+		  "import React from \"react\";",
+		  "import { Div, Text } from \"react-native-magnus\";",
+		  "",
+		  "export function ${TM_FILENAME_BASE}() {",
+		  "  return (",
+		  "    <Div>",
+		  "      <Text>${TM_FILENAME_BASE}</Text>",
+		  "    </Div>",
+		  "  );",
+		  "}",
+		  ""
+		],
+		"description": ""
+	  }
+}

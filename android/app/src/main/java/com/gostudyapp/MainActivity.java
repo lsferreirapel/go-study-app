@@ -3,8 +3,19 @@ package com.gostudyapp;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import android.os.Bundle;
+import org.devio.rn.splashscreen.SplashScreen;
+
 
 public class MainActivity extends ReactActivity {
+
+   @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this, R.style.SplashScreenTheme, R.id.lottie);
+    // SplashScreen.setAnimationFinished(true); // If you want the animation dialog to be forced to close when hide is called, use this code
+    super.onCreate(savedInstanceState);
+    // ...other code
+  }
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule

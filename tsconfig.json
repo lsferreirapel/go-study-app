@@ -5,6 +5,32 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    "paths": {
+      "@assets/*": [
+        "./src/common/assets/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@navigators/*": [
+        "./src/navigators/*"
+      ],
+      "@features": [
+          "./src/features/*"
+      ],
+      "@generated": [
+          "./src/generated/*"
+      ],
+      "@test/*": [
+        "./test/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@root/*": [
+        "./*"
+      ]
+    }
   }
 }
