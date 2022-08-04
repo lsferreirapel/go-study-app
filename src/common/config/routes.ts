@@ -1,4 +1,5 @@
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { StackScreenProps } from "@react-navigation/stack";
+// import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 export enum AuthRoutes {
   NAVIGATOR = "AuthNavigator",
@@ -24,7 +25,9 @@ export type RootStackParamList = {
   /** ----- Auth routes ----- **/
   AuthNavigator: undefined;
   IntroScreen: undefined;
-  LoginScreen: undefined;
+  LoginScreen?: {
+    type: "user" | "admin";
+  };
 
   /** ----- Private routes ----- **/
   PrivateNavigator: undefined;
@@ -33,7 +36,7 @@ export type RootStackParamList = {
 
 type RouteName = keyof RootStackParamList;
 
-export type ScreenProps<T extends RouteName> = NativeStackScreenProps<
+export type ScreenProps<T extends RouteName> = StackScreenProps<
   RootStackParamList,
   T
 >;

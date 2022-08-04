@@ -1,23 +1,19 @@
 import React from "react";
-import { useTheme } from "react-native-magnus";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import { AppRoutes } from "@common/config/routes";
 import { IntroScreen } from "@src/screens/auth/IntroScreen";
 import { LoginScreen } from "@src/screens/auth/LoginScreen";
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 export function AuthNavigator() {
-  const { theme } = useTheme();
-
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: theme?.colors?.white },
       }}
-      initialRouteName={AppRoutes.AUTH.LOGIN}>
+      initialRouteName={AppRoutes.AUTH.INTRO}>
       <Stack.Screen name={AppRoutes.AUTH.INTRO} component={IntroScreen} />
       <Stack.Screen name={AppRoutes.AUTH.LOGIN} component={LoginScreen} />
     </Stack.Navigator>
