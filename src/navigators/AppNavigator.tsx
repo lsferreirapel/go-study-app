@@ -1,21 +1,21 @@
 import React from "react";
-import { useTheme } from "react-native-magnus";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import { AppRoutes } from "@common/config/routes";
 import { AuthNavigator } from "@navigators/AuthNavigator";
 import { PrivateNavigator } from "@navigators/PrivateNavigator";
 
-const Stack = createNativeStackNavigator();
+// This stack navigator reduce app performance but has pretty screen transitions
+const Stack = createStackNavigator();
+
+// This stack navigator improves app performance but has ugly screen transitions
+// const Stack = createNativeStackNavigator();
 
 export function AppNavigator() {
-  const { theme } = useTheme();
-
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: theme?.colors?.white },
       }}
       initialRouteName={AppRoutes.AUTH.NAVIGATOR}>
       <Stack.Screen name={AppRoutes.AUTH.NAVIGATOR} component={AuthNavigator} />

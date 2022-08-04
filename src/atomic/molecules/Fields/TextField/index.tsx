@@ -26,7 +26,7 @@ export function TextField({
   });
 
   return (
-    <Div my="xs" {...containerProps}>
+    <Div my="sm" {...containerProps}>
       {label && (
         <Text variant="label">
           {label}{" "}
