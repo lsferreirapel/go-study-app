@@ -1,15 +1,17 @@
 import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { Button, Div } from "react-native-magnus";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { Button, Text } from "react-native-magnus";
 
 import { LoginFormValues, LoginSchema } from "./LoginSchema";
 
+import { ScreenProps } from "@common/config/routes";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Link } from "@src/atomic/atoms/Link";
 import { TextField } from "@src/atomic/molecules/Fields/TextField";
+import { AuthTemplate } from "@src/atomic/templates/AuthTemplate";
 
-export function LoginScreen() {
-  const { top, bottom, left, right } = useSafeAreaInsets();
+export function LoginScreen({ route }: ScreenProps<"LoginScreen">) {
+  const type = route?.params?.type ?? "user";
 
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(LoginSchema),
@@ -24,7 +26,13 @@ export function LoginScreen() {
   }
 
   return (
-    <Div pt={top} pb={bottom} pl={left + 25} pr={right + 25}>
+    <AuthTemplate containerProps={{ mt: "20%" }}>
+      <Text variant="title">
+        Olá, {type === "user" ? "estudante" : "docente"}!
+      </Text>
+      <Text variant="subtitle" mb="xl">
+        Digite seu CPF e senha{"\n"}para fazer login
+      </Text>
       <FormProvider {...form}>
         <TextField
           name="cpf"
@@ -41,6 +49,7 @@ export function LoginScreen() {
           required
           testID="password-field"
         />
+        <Link mb="3xl">Esqueceu sua senha? Clique aqui</Link>
         <Button
           onPress={form.handleSubmit(onSubmit)}
           disabled={validating}
@@ -49,6 +58,6 @@ export function LoginScreen() {
           Entrar
         </Button>
       </FormProvider>
-    </Div>
+    </AuthTemplate>
   );
 }
